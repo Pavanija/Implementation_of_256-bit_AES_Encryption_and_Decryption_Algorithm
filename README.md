@@ -67,6 +67,17 @@ Output matrix of inverse add round key is performed inverse mix columns operatio
 The difference between mix columns and inverse mix columns is only the matrix with which the
 column is multiplied.This step is not performed in the last round
 
+### Implementation Details 
 In summary , AES 256 Architecture Model implementation is done in verilog and design is evaluated using Vivado.
 ASIC flow is performed using Open source  RTL to GDSII converter, Openlane in Skywater 130 nm PDK , STA is performed using openSTA and viewed layout using Klayout tool.
 Attached are the verilog codes used for Encrytion and Decrytion processes
+#### STA Report
+Summary of setup slack and hold slack for the top-level module
+![AES_Github](https://github.com/Pavanija/Implementation_of_256-bit_AES_Encryption_and_Decryption_Algorithm/assets/140067158/69693ad5-e864-4673-ae00-daf0285d754f)
+For clock Time period of 10ns , pbtained Setup slack is 3.972ns and  Hold slack is 0.397ns
+#### Layout Obtained
+Layout of top module
+cell view 
+![layout1](https://github.com/Pavanija/Implementation_of_256-bit_AES_Encryption_and_Decryption_Algorithm/assets/140067158/d5fdb33e-43f0-49eb-b1f0-994b7b4cc1b3)
+Transistor level view
+![layout2](https://github.com/Pavanija/Implementation_of_256-bit_AES_Encryption_and_Decryption_Algorithm/assets/140067158/8a3ead8d-3ec0-4951-934a-cbbb23d6e3a7)
