@@ -67,4 +67,6 @@ Output matrix of inverse add round key is performed inverse mix columns operatio
 The difference between mix columns and inverse mix columns is only the matrix with which the
 column is multiplied.This step is not performed in the last round
 
-In summary , AES 256 Architecture Model implementation is done in verilog and design is evaluated using MODELSIM.Attached are the verilog codes used for Encrytion and decrytion processes
+In summary , AES 256 Architecture Model implementation is done in verilog and design is evaluated using Vivado.
+ASIC flow is performed using Open source  RTL to GDSII converter, Openlane in Skywater 130 nm PDK , STA is performed using openSTA and viewed layout using Klayout tool.
+Attached are the verilog codes used for Encrytion and Decrytion processes
